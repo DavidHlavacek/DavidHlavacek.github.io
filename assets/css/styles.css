@@ -103,15 +103,15 @@ nav ul li {
   margin: auto;
 }
 
-/* .hero img {
+.hero img {
   height: 37.5rem;
   width: 37.5rem;
-} */
+}
 
-.hero img {
+/* .hero img {
   height: 75%;
   width: 75%;
-}
+} */
 
 .bio {
   width: 25rem;

@@ -6,15 +6,16 @@
   --normal-font: 400;
   --bold-font: 700;
   --bolder-font: 900;
-  --bg-color: #fcfcfc;
+  /* --bg-color: #fcfcfc; */
+  --bg-color: #1c2331;
   --primary-color: #2F80ED;
-  --secondary-color: #ff7235;
+  --secondary-color: #ff7f50;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
-  --transition:  0.4s;
+  --transition:  0.3s;
 }
 /* Variables end */
 
@@ -27,6 +28,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--bg-color);
+  color: #c0d6df;
 }
 
 ul {
@@ -57,8 +60,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  background-color: hsl(219, 26%, 12%);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 nav h1 {
@@ -67,7 +70,7 @@ nav h1 {
 
 nav a {
   color: var(--primary-color);
-  transition: var(--transition);
+  transition: var(--transition); 
 }
 nav a:hover {
   color: var(--secondary-color);
@@ -77,6 +80,7 @@ nav a:hover {
 nav ul {
   display: flex;
   gap: 1.9rem;
+  background-color: hsl(220, 27%, 12%);
 }
 
 nav ul li {
@@ -103,30 +107,40 @@ nav ul li {
   margin: auto;
 }
 
-.hero img {
-  height: 50%;
-  width: 50%;
-}
-
 /* .hero img {
-  height: 75%;
-  width: 75%;
+  height: 37.5rem;
+  width: 37.5rem;
 } */
+
+.hero img {
+  height: 20rem;
+  width: 35rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
+  border-radius: 2rem;
+}
 
 .bio {
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 .bio h1 {
   margin-bottom: var(--bottom-margin);
+  color: #ff7f50;
 }
 
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
+  
+}
+
+.bio-title {
+  color: var(--primary-color);
 }
 
 /* About Section */
@@ -139,6 +153,7 @@ nav ul li {
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  color: var(--primary-color);
 }
 
 .more-about p {
@@ -156,6 +171,7 @@ nav ul li {
 
 .skill-header {
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .skills-wrapper img {
@@ -168,9 +184,9 @@ nav ul li {
 }
 
 .icon-card {
-  background-color: #fff;
+  background-color: #c0d6df;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
   padding: 20px;
   margin: 10px;
 }
@@ -185,6 +201,7 @@ nav ul li {
 .project-pic {
   width: 65%;
   height: 60%;
+  background-color: hsl(219, 26%, 12%);
 }
 
 .projects-container {
@@ -196,6 +213,7 @@ nav ul li {
 .projects-title {
   text-align: center;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .project-container {
@@ -206,10 +224,17 @@ nav ul li {
 
 .project-container p {
   padding: 0.4rem;
+  background-color: hsl(219, 26%, 12%);
+  color: #c0d6df;
+}
+
+.project-container a {
+  background-color: hsl(219, 26%, 12%);
 }
 
 .project-title {
   margin-bottom: var(--bottom-margin);
+  background-color: hsl(219, 26%, 12%);
 }
 
 .project-details {
@@ -217,9 +242,9 @@ nav ul li {
 }
 
 .project-card {
-  background-color: #fff;
+  background-color: hsl(219, 26%, 12%);
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
   padding: 20px;
   margin: 10px;
 }
@@ -232,6 +257,7 @@ nav ul li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  color: var(--primary-color);
 }
 
 .contact-form-container {
@@ -239,13 +265,13 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.8);
 }
 
 .contact-form-container label {
   line-height: 2.7em;
   font-weight: var(--bold-font);
-  color: var(--primary-color);
+  color: #c0d6df;
 }
 
 .contact-form-container textarea {
@@ -273,7 +299,7 @@ nav ul li {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color: #1c2331;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
